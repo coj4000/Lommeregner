@@ -12,16 +12,17 @@ namespace Lommeregner
         {
             double num1 = 0;
             double num2 = 0;
-            int stop = 1;
-            while (stop != 0)
+            bool stop = true;
+            while (stop != false)
             {
 
 
-                Console.WriteLine("Tast + for plus, - for minus, * for gange, / for divider, 2 for i anden, s for kvadratrod og 1 for at slutte");
+                Console.WriteLine("Tast + for plus, - for minus, * for gange, / for divider, 2 for i anden,");
+                Console.WriteLine("s for kvadratrod og 1 for at slutte");
                 string isit = Console.ReadLine();
                 if (isit == "+")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tal der skal lægges sammen:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -31,7 +32,7 @@ namespace Lommeregner
                 }
                 else if (isit == "-")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tal der skal trækkes fra:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -41,7 +42,7 @@ namespace Lommeregner
                 }
                 else if (isit == "*")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tal der skal ganges:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -51,7 +52,7 @@ namespace Lommeregner
                 }
                 else if (isit == "/")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tal der skal divideres:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -61,7 +62,7 @@ namespace Lommeregner
                 }
                 else if (isit == "2")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tallet der skal i anden:");
                     string input1 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
                     double ianden = num1 * num1;
@@ -69,7 +70,7 @@ namespace Lommeregner
                 }
                 else if (isit == "s")
                 {
-                    Console.WriteLine("Tast tal");
+                    Console.WriteLine("Tast tallet der skal kvarderes:");
                     string input1 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
                     double ianden = Math.Sqrt(num1);
@@ -77,7 +78,7 @@ namespace Lommeregner
                 }
                 else if (isit == "1")
                 {
-                    stop = 0;
+                    stop = false;
                     Console.WriteLine("Program slutter");
                 }
                 else
