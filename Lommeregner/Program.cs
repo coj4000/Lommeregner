@@ -17,7 +17,7 @@ namespace Lommeregner
             {
 
 
-                Console.WriteLine("Tas + for plus, - for minus, * for gange, / for divider og 1 for at slutte");
+                Console.WriteLine("Tast + for plus, - for minus, * for gange, / for divider, 2 for i anden, s for kvadratrod og 1 for at slutte");
                 string isit = Console.ReadLine();
                 if (isit == "+")
                 {
@@ -32,32 +32,48 @@ namespace Lommeregner
                 else if (isit == "-")
                 {
                     Console.WriteLine("Tast tal");
-                    string input3 = Console.ReadLine();
-                    string input4 = Console.ReadLine();
-                    Double.TryParse(input3, out num1);
-                    Double.TryParse(input4, out num2);
+                    string input1 = Console.ReadLine();
+                    string input2 = Console.ReadLine();
+                    Double.TryParse(input1, out num1);
+                    Double.TryParse(input2, out num2);
                     double minus = num1 - num2;
                     Console.WriteLine("Svar er " + minus);
                 }
                 else if (isit == "*")
                 {
                     Console.WriteLine("Tast tal");
-                    string input3 = Console.ReadLine();
-                    string input4 = Console.ReadLine();
-                    Double.TryParse(input3, out num1);
-                    Double.TryParse(input4, out num2);
+                    string input1 = Console.ReadLine();
+                    string input2 = Console.ReadLine();
+                    Double.TryParse(input1, out num1);
+                    Double.TryParse(input2, out num2);
                     double gange = num1 * num2;
                     Console.WriteLine("Svar er " + gange);
                 }
                 else if (isit == "/")
                 {
                     Console.WriteLine("Tast tal");
-                    string input3 = Console.ReadLine();
-                    string input4 = Console.ReadLine();
-                    Double.TryParse(input3, out num1);
-                    Double.TryParse(input4, out num2);
+                    string input1 = Console.ReadLine();
+                    string input2 = Console.ReadLine();
+                    Double.TryParse(input1, out num1);
+                    Double.TryParse(input2, out num2);
                     double divider = num1 / num2;
                     Console.WriteLine("Svar er " + divider);
+                }
+                else if (isit == "2")
+                {
+                    Console.WriteLine("Tast tal");
+                    string input1 = Console.ReadLine();
+                    Double.TryParse(input1, out num1);
+                    double ianden = num1 * num1;
+                    Console.WriteLine("Svar er " + ianden);
+                }
+                else if (isit == "s")
+                {
+                    Console.WriteLine("Tast tal");
+                    string input1 = Console.ReadLine();
+                    Double.TryParse(input1, out num1);
+                    double ianden = Math.Sqrt(num1);
+                    Console.WriteLine("Svar er " + ianden);
                 }
                 else if (isit == "1")
                 {
