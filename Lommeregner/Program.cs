@@ -22,7 +22,7 @@ namespace Lommeregner
                 string isit = Console.ReadLine();
                 if (isit == "+")
                 {
-                    Console.WriteLine("Tast tal der skal lægges sammen:");
+                    Console.WriteLine("Tast tallene der skal lægges sammen:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -32,7 +32,7 @@ namespace Lommeregner
                 }
                 else if (isit == "-")
                 {
-                    Console.WriteLine("Tast tal der skal trækkes fra:");
+                    Console.WriteLine("Tast tallene der skal trækkes fra:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -42,7 +42,7 @@ namespace Lommeregner
                 }
                 else if (isit == "*")
                 {
-                    Console.WriteLine("Tast tal der skal ganges:");
+                    Console.WriteLine("Tast tallene der skal ganges:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
@@ -52,7 +52,7 @@ namespace Lommeregner
                 }
                 else if (isit == "/")
                 {
-                    Console.WriteLine("Tast tal der skal divideres:");
+                    Console.WriteLine("Tast tallene der skal divideres:");
                     string input1 = Console.ReadLine();
                     string input2 = Console.ReadLine();
                     Double.TryParse(input1, out num1);
